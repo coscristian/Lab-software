@@ -60,7 +60,7 @@ namespace GestionInventario.Services
             };
         }
 
-        public bool UpdateUser(string idNumber, bool status)
+        public bool UpdateUser( string idNumber, bool status)
         {
             User user = _userRepository.GetUserByIdNumber(idNumber);
             if (user == null)
@@ -68,5 +68,18 @@ namespace GestionInventario.Services
 
             return _userRepository.UpdateUserStatus(idNumber, status);
         }
-    }
+        
+        public bool ValidarUsuario(User usuario)
+{
+    // Obtiene el usuario por correo electrónico
+    User? existingUser = _userRepository.GetUserByEmail(usuario.Email);
+    
+    // Verifica si el usuario existe y si la contraseña coincide
+    return existingUser != null && existingUser.Password == usuario.Password;
 }
+
+            
+     }
+}
+
+

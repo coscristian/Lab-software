@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\GestionInventario.csproj": {}
+    "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\GestionInventario.csproj": {
+    "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\GestionInventario.csproj",
+        "projectUniqueName": "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "projectName": "GestionInventario",
-        "projectPath": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\GestionInventario.csproj",
-        "packagesPath": "C:\\Users\\cristian.quesada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\obj\\",
+        "projectPath": "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cristian.quesada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
