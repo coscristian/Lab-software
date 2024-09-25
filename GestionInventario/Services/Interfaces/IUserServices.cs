@@ -9,7 +9,6 @@ namespace GestionInventario.Services.Interfaces
         List<UserDto> GeAlltUsers();
         bool CreateUser(User newUser);
         bool UpdateUser(string idNumber, bool status);
-
-        bool ValidarUsuario(User usuario);
+        bool ValidarUsuario(string email, string password);
     }
 }

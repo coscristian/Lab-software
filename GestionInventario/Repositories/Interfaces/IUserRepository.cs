@@ -4,8 +4,6 @@ namespace GestionInventario.Repositories.Interfaces
 {
     public interface IUserRepository
     {
-        public User? GetUserById(int id);
-        public User? GetUserByUsername(string username);
         public User? GetUserByEmail(string email);
         public User? GetUserByIdNumber(string idNumber);
         public List<User> GetAllUsers();

@@ -49,36 +49,33 @@ namespace GestionInventario.Services
         {
             User? user = _userRepository.GetUserByEmail(email);
             if (user == null)
-                throw new InvalidOperationException("Usuario no existente.");
+                return new UserDto();
 
             return new UserDto()
             {
                 Id = user.Id,
                 Name = user.Name,
                 LastName = user.LastName,
-                PhoneNumber = user.PhoneNumber
+                PhoneNumber = user.PhoneNumber,
+                Status = user.Status
             };
         }
 
         public bool UpdateUser( string idNumber, bool status)
         {
-            User user = _userRepository.GetUserByIdNumber(idNumber);
+            User? user = _userRepository.GetUserByIdNumber(idNumber);
             if (user == null)
                 return false;
 
             return _userRepository.UpdateUserStatus(idNumber, status);
         }
         
-        public bool ValidarUsuario(User usuario)
-{
-    // Obtiene el usuario por correo electrónico
-    User? existingUser = _userRepository.GetUserByEmail(usuario.Email);
+        public bool ValidarUsuario(string email, string password)
+        {
+            User? existingUser = _userRepository.GetUserByEmail(email);
     
-    // Verifica si el usuario existe y si la contraseña coincide
-    return existingUser != null && existingUser.Password == usuario.Password;
-}
-
-            
+            return existingUser != null && existingUser.Password == password;
+        }
      }
 }
 

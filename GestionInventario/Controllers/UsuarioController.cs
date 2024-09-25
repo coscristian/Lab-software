@@ -5,9 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GestionInventario.Controllers
 {
-    public class UsuarioController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UsuarioController : ControllerBase
     {
-        private IUserServices _userService;
+        private readonly IUserServices _userService;
 
         public UsuarioController(IUserServices userServices) 
         {
@@ -15,7 +17,7 @@ namespace GestionInventario.Controllers
         }
 
         [HttpGet]
-        [Route("/GetUserByEmail")]
+        [Route("GetUserByEmail")]
         public ActionResult<UserDto> GetUserByEmail(string email)
         {
             UserDto userDto = _userService.GetUserByEmail(email);  
@@ -23,7 +25,7 @@ namespace GestionInventario.Controllers
         }
 
         [HttpGet]
-        [Route("/GetAllUsers")]
+        [Route("GetAllUsers")]
         public ActionResult<List<UserDto>> GetAllUsers()
         {
             List<UserDto> usersDto = _userService.GeAlltUsers();

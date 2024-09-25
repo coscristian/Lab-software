@@ -23,16 +23,6 @@ namespace GestionInventario.Repositories
             return _users.Find(u => u.Email == email);
         }
 
-        public User GetUserById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public User GetUserByUsername(string username)
-        {
-            throw new NotImplementedException();
-        }
-
         public User? GetUserByIdNumber(string idNumber)
         {
             return _users.Find(u => u.IdNumber == idNumber);
