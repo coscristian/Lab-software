@@ -63,3 +63,36 @@ c:\Proyecto LabSoft\Lab-software\GestionInventario\obj\Debug\net8.0\scopedcss\bu
 C:\Proyecto LabSoft\Lab-software\GestionInventario\obj\Debug\net8.0\GestionI.14355B1F.Up2Date
 C:\Proyecto LabSoft\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.genruntimeconfig.cache
 C:\Proyecto LabSoft\Lab-software\GestionInventario\obj\Debug\net8.0\ref\GestionInventario.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\appsettings.Development.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\appsettings.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\GestionInventario.exe
+C:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\GestionInventario.deps.json
+C:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\GestionInventario.runtimeconfig.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\GestionInventario.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\GestionInventario.pdb
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\Microsoft.OpenApi.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.csproj.AssemblyReference.cache
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.GeneratedMSBuildEditorConfig.editorconfig
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.AssemblyInfoInputs.cache
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.AssemblyInfo.cs
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.csproj.CoreCompileInputs.cache
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.MvcApplicationPartsAssemblyInfo.cs
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.MvcApplicationPartsAssemblyInfo.cache
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.sourcelink.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets.build.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets.development.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets\msbuild.GestionInventario.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets\msbuild.build.GestionInventario.props
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GestionInventario.props
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GestionInventario.props
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\scopedcss\bundle\GestionInventario.styles.css
+C:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionI.14355B1F.Up2Date
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\refint\GestionInventario.dll
+c:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.pdb
+C:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\GestionInventario.genruntimeconfig.cache
+C:\Proyecto LabSoft\Versión 1\Lab-software\GestionInventario\obj\Debug\net8.0\ref\GestionInventario.dll

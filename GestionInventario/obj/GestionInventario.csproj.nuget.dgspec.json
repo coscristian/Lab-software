@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
+    "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
+    "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "projectUniqueName": "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "projectName": "GestionInventario",
-        "projectPath": "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "projectPath": "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto LabSoft\\Lab-software\\GestionInventario\\obj\\",
+        "outputPath": "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

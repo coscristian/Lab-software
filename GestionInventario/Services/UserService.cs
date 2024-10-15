@@ -38,7 +38,8 @@ namespace GestionInventario.Services
                     Id = user.Id,
                     Name = user.Name,
                     LastName = user.LastName,
-                    PhoneNumber = user.PhoneNumber
+                    PhoneNumber = user.PhoneNumber,
+                    Status = user.Status
                 });
             }
 

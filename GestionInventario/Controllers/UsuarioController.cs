@@ -11,7 +11,7 @@ namespace GestionInventario.Controllers
     {
         private readonly IUserServices _userService;
 
-        public UsuarioController(IUserServices userServices) 
+        public UsuarioController(IUserServices userServices)
         {
             _userService = userServices;
         }
@@ -20,8 +20,24 @@ namespace GestionInventario.Controllers
         [Route("GetUserByEmail")]
         public ActionResult<UserDto> GetUserByEmail(string email)
         {
-            UserDto userDto = _userService.GetUserByEmail(email);  
-            return Ok(userDto);
+            try
+            {
+                UserDto userDto = _userService.GetUserByEmail(email);
+                return Ok(userDto);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                //return BadRequest(ex.Message);
+                return StatusCode(500,
+                    new
+                    {
+                        mensaje = "Ocurrio un error interno en el servidor",
+                        detalles = ex.Message
+                    }
+                );
+            }
+
         }
 
         [HttpGet]
@@ -36,8 +52,27 @@ namespace GestionInventario.Controllers
         [Route("CreateUser")]
         public ActionResult<List<UserDto>> CreateUser(User user)
         {
-            var result = _userService.CreateUser(user);
-            return Ok(result);
+            try
+            {
+                if(user == null){
+                    return  BadRequest("El cliente no puede ser nulo");
+                }
+                _userService.CreateUser(user);
+                return CreatedAtAction(nameof(GetAllUsers), new {id = user.Id}, user);
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                //return BadRequest(ex.Message);
+                return StatusCode(500,
+                    new
+                    {
+                        mensaje = "Ocurrio un error interno en el servidor",
+                        detalles = ex.Message
+                    }
+                );
+            }
         }
 
         [HttpPut]
