@@ -1,3 +1,4 @@
+using AutoMapper;
 using GestionInventario.Models;
 using GestionInventario.Repositories;
 using GestionInventario.Repositories.Interfaces;
@@ -13,12 +14,25 @@ namespace GestionInventario
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            
+            var config = new MapperConfiguration(config =>
+                {
+                    config.AllowNullCollections = true;
+                    config.AllowNullDestinationValues = true;
+                    config.AddProfile(new AutoMapperProfile.AutoMapperProfile());
+                }    
+            );
+
+            var mapper = config.CreateMapper();
+            
 
             builder.Services.AddControllers();
 
-            builder.Services.AddSingleton<IUserServices, UserService>();
-            builder.Services.AddSingleton<IUserRepository, UserRepository>();
-            
+            builder.Services.AddSingleton(mapper);
+            builder.Services.AddScoped<IUserServices, UserService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
             builder.Services.AddDbContext<MyDbContext>(options =>
             {

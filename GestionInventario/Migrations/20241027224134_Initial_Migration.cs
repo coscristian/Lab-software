@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 using MySql.EntityFrameworkCore.Metadata;
 
 #nullable disable
@@ -6,12 +7,34 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace GestionInventario.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initial_Migration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
+                .Annotation("MySQL:Charset", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    BarCode = table.Column<string>(type: "longtext", nullable: false),
+                    Name = table.Column<string>(type: "longtext", nullable: false),
+                    Description = table.Column<string>(type: "longtext", nullable: false),
+                    UnitPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    UnitMeasure = table.Column<string>(type: "longtext", nullable: false),
+                    Stock = table.Column<int>(type: "int", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    ModificationDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    MotivoEstado = table.Column<string>(type: "longtext", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Id);
+                })
                 .Annotation("MySQL:Charset", "utf8mb4");
 
             migrationBuilder.CreateTable(
@@ -22,6 +45,7 @@ namespace GestionInventario.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext", nullable: false),
                     LastName = table.Column<string>(type: "longtext", nullable: false),
+                    Age = table.Column<int>(type: "int", nullable: false),
                     IdType = table.Column<string>(type: "longtext", nullable: false),
                     IdNumber = table.Column<string>(type: "longtext", nullable: false),
                     Address = table.Column<string>(type: "longtext", nullable: false),
@@ -40,6 +64,9 @@ namespace GestionInventario.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Products");
+
             migrationBuilder.DropTable(
                 name: "User");
         }
