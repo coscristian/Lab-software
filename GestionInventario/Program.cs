@@ -1,7 +1,10 @@
+using GestionInventario.Models;
 using GestionInventario.Repositories;
 using GestionInventario.Repositories.Interfaces;
 using GestionInventario.Services;
 using GestionInventario.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace GestionInventario
 {
@@ -15,6 +18,12 @@ namespace GestionInventario
 
             builder.Services.AddSingleton<IUserServices, UserService>();
             builder.Services.AddSingleton<IUserRepository, UserRepository>();
+            
+
+            builder.Services.AddDbContext<MyDbContext>(options =>
+            {
+                options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

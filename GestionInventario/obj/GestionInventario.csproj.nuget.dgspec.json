@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
+    "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
+    "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "projectUniqueName": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "projectName": "GestionInventario",
-        "projectPath": "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "projectPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto LabSoft\\Versión 1\\Lab-software\\GestionInventario\\obj\\",
+        "outputPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -70,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
