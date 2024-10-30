@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\",
+  "WorkspaceRootPath": "C:\\Projects\\GestionInventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\automapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\automapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\services\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\services\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\services\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\users\\cristian.quesada\\source\\repos\\gestioninventario\\gestioninventario\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|c:\\projects\\gestioninventario\\gestioninventario\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A44640-F17C-4B33-A7AB-1F25993FB9FD}|GestionInventario\\GestionInventario.csproj|solutionrelative:gestioninventario\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -179,106 +187,125 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\Models\\Product.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Models\\Product.cs",
+              "RelativeToolTip": "GestionInventario\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T01:29:40.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "RelativeToolTip": "GestionInventario\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T01:29:37.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Repositories\\Interfaces\\IUserRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Repositories\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "GestionInventario\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Repositories\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "GestionInventario\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T02:26:43.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "GestionInventario\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "GestionInventario\\Repositories\\UserRepository.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAiwCwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T02:24:53.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Models\\Dto\\UserDto.cs",
-              "RelativeDocumentMoniker": "GestionInventario\\Models\\Dto\\UserDto.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Models\\Dto\\UserDto.cs",
-              "RelativeToolTip": "GestionInventario\\Models\\Dto\\UserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T02:17:05.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "GestionInventario\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Services\\UserService.cs",
-              "RelativeToolTip": "GestionInventario\\Services\\UserService.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAEwC8AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T02:09:17.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserServices.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Services\\Interfaces\\IUserServices.cs",
-              "RelativeDocumentMoniker": "GestionInventario\\Services\\Interfaces\\IUserServices.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Services\\Interfaces\\IUserServices.cs",
-              "RelativeToolTip": "GestionInventario\\Services\\Interfaces\\IUserServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T01:54:16.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "GestionInventario\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "GestionInventario\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA1wBoAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T01:47:43.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Program.cs",
-              "RelativeDocumentMoniker": "GestionInventario\\Program.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Program.cs",
-              "RelativeToolTip": "GestionInventario\\Program.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAkwBAAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T01:41:44.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T02:24:53.071Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Models\\Dto\\UserDto.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\Models\\Dto\\UserDto.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Models\\Dto\\UserDto.cs",
+              "RelativeToolTip": "GestionInventario\\Models\\Dto\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T02:17:05.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\Services\\UserService.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Services\\UserService.cs",
+              "RelativeToolTip": "GestionInventario\\Services\\UserService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAEwC8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T02:09:17.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Services\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\Services\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Services\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "GestionInventario\\Services\\Interfaces\\IUserServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T01:54:16.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "GestionInventario\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA1wBoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T01:47:43.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Program.cs",
+              "RelativeDocumentMoniker": "GestionInventario\\Program.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Program.cs",
+              "RelativeToolTip": "GestionInventario\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAkwBAAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T01:41:44.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Projects\\GestionInventario\\GestionInventario\\Models\\User.cs",
               "RelativeDocumentMoniker": "GestionInventario\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\cristian.quesada\\Source\\Repos\\GestionInventario\\GestionInventario\\Models\\User.cs",
+              "ToolTip": "C:\\Projects\\GestionInventario\\GestionInventario\\Models\\User.cs",
               "RelativeToolTip": "GestionInventario\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T01:55:28.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T01:55:28.504Z"
             }
           ]
         },
