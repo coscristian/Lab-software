@@ -33,6 +33,8 @@ namespace GestionInventario
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IMovementService, MovementService>();
+            builder.Services.AddScoped<IMovementRepository, MovementRepository>();
 
             builder.Services.AddDbContext<MyDbContext>(options =>
             {

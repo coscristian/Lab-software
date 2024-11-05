@@ -12,6 +12,7 @@ public interface IProductService
     Task<bool> ExistsProductById(int id);
 
     Task<bool> UpdateProduct(int id , ProductDto productUpd);
+    Task<bool> Update(Product product);
 
     Task<Product?> GetProductById(int id);
 

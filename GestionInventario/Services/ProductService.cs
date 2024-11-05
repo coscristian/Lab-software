@@ -59,8 +59,6 @@ public class ProductService : IProductService
 
     public async Task<Product?> GetProductById(int id)
     {
-
-
         return await _productRepository.GetProductById(id);
     }
 
@@ -83,6 +81,11 @@ public class ProductService : IProductService
 
         // Realizar la actualización en el repositorio
         return await _productRepository.UpdateProduct(existingProduct);
+    }
+
+    public async Task<bool> Update(Product product)
+    {
+        return await _productRepository.UpdateProduct(product);
     }
 
 
