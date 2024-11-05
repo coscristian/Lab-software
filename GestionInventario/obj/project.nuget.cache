@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uF81X6W7as8=",
+  "dgSpecHash": "yuwcy1+BvyA=",
   "success": true,
-  "projectFilePath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+  "projectFilePath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\GestionInventario.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

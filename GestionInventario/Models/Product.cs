@@ -9,4 +9,6 @@ public class Product : Entity
     public decimal UnitPrice { get; set; }
     public string UnitMeasure { get; set; }
     public int Stock { get; set; }
+
+   
 }

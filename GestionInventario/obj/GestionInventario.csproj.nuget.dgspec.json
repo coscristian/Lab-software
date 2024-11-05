@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
+    "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\GestionInventario.csproj": {}
   },
   "projects": {
-    "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
+    "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\GestionInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "projectUniqueName": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "projectName": "GestionInventario",
-        "projectPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\GestionInventario.csproj",
+        "projectPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\GestionInventario.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versión 1\\Lab-software\\GestionInventario\\obj\\",
+        "outputPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.10, )"

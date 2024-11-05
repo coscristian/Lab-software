@@ -1,6 +1,8 @@
+using AutoMapper;
 using GestionInventario.Models.Dto;
 using GestionInventario.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using MySqlX.XDevAPI;
 
 namespace GestionInventario.Controllers.Products;
 
@@ -9,10 +11,12 @@ namespace GestionInventario.Controllers.Products;
 public class ProductController : ControllerBase
 {
     private readonly IProductService _productService;
+    private readonly IMapper _mapper;
 
-    public ProductController(IProductService productService)
+    public ProductController(IProductService productService, IMapper mapper)
     {
         _productService = productService;
+        _mapper = mapper;
     }
     
     [HttpPost]
@@ -22,4 +26,56 @@ public class ProductController : ControllerBase
         var result = await _productService.CreateProduct(product);
         return Ok(result);
     }
+
+    [HttpGet]
+    [Route("Read")]
+    public async Task<ActionResult<List<ProductDto>>> Get()
+    {
+        var products = await _productService.GetAllProducts();
+        var productsDto = _mapper.Map<List<ProductDto>>(products);
+        return Ok(productsDto);
+    }
+
+
+    [HttpPut]
+    [Route("Updates")]
+    public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductDto updatedProductDto)
+    {
+        // Validar si el DTO es nulo
+        if (updatedProductDto == null)
+        {
+            return BadRequest("El cuerpo de la solicitud no puede estar vacío.");
+        }
+
+        // Intentar actualizar el producto
+        bool isUpdated = await _productService.UpdateProduct(id, updatedProductDto);
+
+        // Si no se encontró el producto, devolver NotFound
+        if (!isUpdated)
+        {
+            return NotFound($"No se encontró el producto con ID = {id}.");
+        }
+
+        // Si la actualización fue exitosa, devolver NoContent
+        return NoContent();
+    }
+
+
+
+    [HttpDelete]
+    [Route("id")]
+
+    public async Task<IActionResult> DeleteProduct(int id)
+    {
+
+        var deleteproduct = await _productService.GetProductById(id);
+        if (deleteproduct == null)
+        {
+            return NotFound($"No se encontró el producto con ID = {id}.");
+        }
+
+        _productService.DeleteProduct(id);
+        return NoContent();
+    }
+
 }

@@ -1,70 +1,155 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\",
+  "WorkspaceRootPath": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Controllers\\AutenticarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AutenticarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\models\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:models\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\controllers\\products\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:controllers\\products\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\automapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:automapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|c:\\materia labsw-2024-02\\proyecto inventario labsoft\\versionentrega2\\lab-software\\gestioninventario\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB1D28C-877B-4EF0-B9E0-ECDF9BD9E79E}|GestionInventario.csproj|solutionrelative:repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-05T01:46:34.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "AutoMapperProfile\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "RelativeToolTip": "AutoMapperProfile\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:48:29.591Z",
+              "WhenOpened": "2024-11-04T23:10:23.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Services\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Services\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:55:35.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-20T19:47:14.414Z",
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Models\\Dto\\ProductDto.cs",
+              "RelativeDocumentMoniker": "Models\\Dto\\ProductDto.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Models\\Dto\\ProductDto.cs",
+              "RelativeToolTip": "Models\\Dto\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:43:28.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutenticarController.cs",
-              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Controllers\\AutenticarController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AutenticarController.cs",
-              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\Versi\u00F3n 1\\Lab-software\\GestionInventario\\Controllers\\AutenticarController.cs",
-              "RelativeToolTip": "Controllers\\AutenticarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:42:17.815Z",
+              "WhenOpened": "2024-11-04T15:32:40.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwD8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T17:36:59.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Controllers\\Products\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Products\\ProductController.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Controllers\\Products\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\Products\\ProductController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:30:19.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Repositories\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Materia LabSW-2024-02\\Proyecto Inventario LabSoft\\VersionEntrega2\\Lab-software\\GestionInventario\\Repositories\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:32:42.546Z",
               "EditorCaption": ""
             }
           ]
