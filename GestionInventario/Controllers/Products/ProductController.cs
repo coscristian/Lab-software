@@ -29,9 +29,9 @@ public class ProductController : ControllerBase
 
     [HttpGet]
     [Route("Read")]
-    public async Task<ActionResult<List<ProductDto>>> Get()
+    public async Task<ActionResult<List<ProductDto>>> Get(string? name, string? category)
     {
-        var products = await _productService.GetAllProducts();
+        var products = await _productService.GetAllProducts(name, category);
         var productsDto = _mapper.Map<List<ProductDto>>(products);
         return Ok(productsDto);
     }
@@ -39,7 +39,7 @@ public class ProductController : ControllerBase
 
     [HttpPut]
     [Route("Updates")]
-    public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductDto updatedProductDto)
+    public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductUpdateDto updatedProductDto)
     {
         // Validar si el DTO es nulo
         if (updatedProductDto == null)
@@ -57,25 +57,18 @@ public class ProductController : ControllerBase
         }
 
         // Si la actualización fue exitosa, devolver NoContent
-        return NoContent();
+        return Ok(isUpdated);
     }
 
 
 
-    [HttpDelete]
-    [Route("id")]
+    [HttpPut]
+    [Route("Delete")]
 
     public async Task<IActionResult> DeleteProduct(int id)
     {
-
-        var deleteproduct = await _productService.GetProductById(id);
-        if (deleteproduct == null)
-        {
-            return NotFound($"No se encontró el producto con ID = {id}.");
-        }
-
-        _productService.DeleteProduct(id);
-        return NoContent();
+        var result = await _productService.UpdateProductStatus(id);
+        return Ok(result);
     }
 
 }

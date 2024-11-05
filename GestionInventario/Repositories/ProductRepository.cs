@@ -32,10 +32,13 @@ public class ProductRepository : IProductRepository
         return await _context.Products.AnyAsync(p => p.BarCode == barCode);
     }
 
-    public async Task<List<Product>> GetAllProducts()
+    public async Task<List<Product>> GetAllProducts(string? name, string? category)
     {
-
-        return await _context.Products.ToListAsync();
+        return await _context.Products
+                .Where(p => p.Status &&
+                            (string.IsNullOrEmpty(name) || p.Name.Contains(name)) &&
+                            (string.IsNullOrEmpty(category) || p.Category.Contains(category)))
+                .ToListAsync();
     }
 
     public async Task<bool> UpdateProduct(Product product)
@@ -60,12 +63,9 @@ public class ProductRepository : IProductRepository
 
     public async Task<Product?> GetProductById(int id)
     {
-        if (!await ExistsProductById(id))
-        {
-            return null;
-        }
-
-        return await _context.Products.FindAsync(id);
+        return await _context.Products
+            .Where(p => p.Status && p.Id == id)
+            .FirstOrDefaultAsync();
     }
 
     public async Task<bool>  DeleteProduct( int id)

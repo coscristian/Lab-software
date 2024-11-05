@@ -27,7 +27,18 @@ namespace GestionInventario.Services
                 return false;
             }
 
-            product.Stock = movementDto.Amount;
+            if(movementDto.Type.Equals("Adicionar"))            
+            {
+                product.Stock += movementDto.Amount;
+            }else if(movementDto.Type.Equals("Disminuir"))
+            {
+                product.Stock -= movementDto.Amount;
+                if(product.Stock < 0)
+                {
+                    product.Stock = 0;
+                }
+            }
+
             var updateStockSuceed = await _productService.Update(product);
             if(!updateStockSuceed)
             {
