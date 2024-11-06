@@ -45,18 +45,19 @@ public class ProductRepository : IProductRepository
     {
         try
         {
-            // Marca el objeto como modificado
+            
             _context.Products.Update(product);
 
-            // Guarda los cambios
+         
             int rowsAffected = await _context.SaveChangesAsync();
 
-            // Verifica si alguna fila fue afectada
+            
             return rowsAffected > 0;
         }
         catch (Exception)
         {
             // Manejo de excepciones, devuelve false en caso de error
+            
             return false;
         }
     }
