@@ -14,9 +14,7 @@ public class SupplierService : ISupplierService
 
 {
     private readonly ISupplierRepository _supplierRepository;
-    private readonly IMapper _mapper;
-
-    
+    private readonly IMapper _mapper; 
     
     public SupplierService(ISupplierRepository supplierRepository, IMapper mapper)
     {
@@ -24,9 +22,23 @@ public class SupplierService : ISupplierService
         _mapper = mapper;
     }
 
-    public async Task<bool> CreateSupplier(ProductDto product)
+    public async Task<bool> CreateSupplier(SupplierDto supplierDto)
     {
-        throw new NotImplementedException();
+        var supplier = await _supplierRepository.GetSuppliertByNit(supplierDto.Nit);
+
+        if(supplier != null)
+        {
+            return false;
+        }
+
+        var mappedSupplier = _mapper.Map<SupplierDto, Supplier>(supplierDto);
+        mappedSupplier.Status = true;
+        mappedSupplier.CreationDate = DateTime.Now;
+        mappedSupplier.ModificationDate = DateTime.Now;
+        mappedSupplier.MotivoEstado = string.Empty;
+
+        var result = await _supplierRepository.Add(mappedSupplier);
+        return result;
     }
 
     public async Task<bool> ExistsSupplierById(int id)
@@ -34,9 +46,9 @@ public class SupplierService : ISupplierService
         throw new NotImplementedException();
     }
 
-    public async Task<List<Supplier>> GetAllSupplier()
+    public async Task<List<Supplier>> GetAllSuppliers()
     {
-        throw new NotImplementedException();
+        return await _supplierRepository.GetAllSuppliers();
     }
 
     public async Task<Supplier?> GetSupplierById(int id)
@@ -49,20 +61,30 @@ public class SupplierService : ISupplierService
         throw new NotImplementedException();
     }
 
-    public async Task<bool> UpdateSupplier(int id, SupplierUpdateDto updatedSupplierDto)
+    public async Task<bool> UpdateSupplier(string nit, SupplierUpdateDto updatedSupplierDto)
     {
-       // Obtener el producto existente del repositorio
-         Supplier? existingsupplier = await _supplierRepository.GetSuppliertById(id);
-
-        // Si el producto no existe, retorna false
+        var existingsupplier = await _supplierRepository.GetSuppliertByNit(nit);
         if (existingsupplier == null)
         {
             return false;
         }
+
+        existingsupplier.ModificationDate = DateTime.Now;
+        existingsupplier.Address = updatedSupplierDto.Address;
+        existingsupplier.Phone = updatedSupplierDto.Phone;
+
+        return await _supplierRepository.UpdateSupplier(existingsupplier);
     }
 
-    public async Task<bool> UpdateSupplierStatus(int id)
+    public async Task<bool> UpdateSupplierStatus(string nit)
     {
-        throw new NotImplementedException();
+        var existingsupplier = await _supplierRepository.GetSuppliertByNit(nit);
+        if (existingsupplier == null)
+        {
+            return false;
+        }
+
+        existingsupplier.Status = false;
+        return await _supplierRepository.UpdateSupplier(existingsupplier);
     }
 }

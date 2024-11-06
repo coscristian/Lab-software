@@ -7,21 +7,16 @@ namespace GestionInventario.Services.Interfaces;
 public interface ISupplierService
 
 {
-    Task<bool> CreateSupplier(ProductDto product);
+    Task<bool> CreateSupplier(SupplierDto supplierDto);
 
-    Task<List<Supplier>> GetAllSupplier();
+    Task<List<Supplier>> GetAllSuppliers();
 
     Task<bool> ExistsSupplierById(int id);
 
-    Task<bool> UpdateSupplier(int id, SupplierUpdateDto  updatedSupplierDto);
+    Task<bool> UpdateSupplier(string nit, SupplierUpdateDto updatedSupplierDto);
 
     Task<bool> Update();
 
     Task<Supplier?> GetSupplierById(int id);
-
-    Task<bool> UpdateSupplierStatus(int id);
-
-
-
-
+    Task<bool> UpdateSupplierStatus(string nit);
 }

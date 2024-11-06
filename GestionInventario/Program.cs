@@ -6,7 +6,6 @@ using GestionInventario.Services;
 using GestionInventario.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace GestionInventario
 {
     public class Program
@@ -28,6 +27,13 @@ namespace GestionInventario
 
             builder.Services.AddControllers();
 
+            builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+    });
+
+
             builder.Services.AddSingleton(mapper);
             builder.Services.AddScoped<IUserServices, UserService>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -35,6 +41,8 @@ namespace GestionInventario
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IMovementService, MovementService>();
             builder.Services.AddScoped<IMovementRepository, MovementRepository>();
+            builder.Services.AddScoped<ISupplierService, SupplierService>();
+            builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 
             builder.Services.AddDbContext<MyDbContext>(options =>
             {
