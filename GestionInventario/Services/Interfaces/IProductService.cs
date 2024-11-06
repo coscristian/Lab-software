@@ -7,13 +7,14 @@ namespace GestionInventario.Services.Interfaces;
 public interface IProductService
 {
     Task<bool> CreateProduct(ProductDto product);
-    Task<List<Product>> GetAllProducts();
+    Task<List<Product>> GetAllProducts(string? name, string? category);
     
     Task<bool> ExistsProductById(int id);
 
-    Task<bool> UpdateProduct(int id , ProductDto productUpd);
+    Task<bool> UpdateProduct(int id , ProductUpdateDto updatedProductDto);
+    Task<bool> Update(Product product);
 
     Task<Product?> GetProductById(int id);
 
-    Task<bool> DeleteProduct( int id);
+    Task<bool> UpdateProductStatus(int id);
 }

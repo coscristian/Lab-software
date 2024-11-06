@@ -29,7 +29,7 @@ public class ProductService : IProductService
                 return false;
 
             var mappedProduct = _mapper.Map<ProductDto, Product>(product);
-            //mappedProduct.Status = Status.Active;
+            mappedProduct.Status = true;
             mappedProduct.CreationDate = DateTime.Now;
             mappedProduct.ModificationDate = DateTime.Now;
             mappedProduct.MotivoEstado = string.Empty;
@@ -43,10 +43,9 @@ public class ProductService : IProductService
         }
     }
 
-    public async Task<List<Product>> GetAllProducts()
-
+    public async Task<List<Product>> GetAllProducts(string? name, string? category)
     {
-        return await _productRepository.GetAllProducts();
+        return await _productRepository.GetAllProducts(name, category);
     }
 
 
@@ -59,12 +58,10 @@ public class ProductService : IProductService
 
     public async Task<Product?> GetProductById(int id)
     {
-
-
         return await _productRepository.GetProductById(id);
     }
 
-    public async Task<bool> UpdateProduct(int id, ProductDto updatedProductDto)
+    public async Task<bool> UpdateProduct(int id, ProductUpdateDto updatedProductDto)
     {
         // Obtener el producto existente del repositorio
         Product? existingProduct = await _productRepository.GetProductById(id);
@@ -75,24 +72,29 @@ public class ProductService : IProductService
             return false;
         }
 
-        // Actualizar propiedades del producto a partir del DTO
         existingProduct.Name = updatedProductDto.Name;
         existingProduct.UnitPrice = updatedProductDto.UnitPrice;
-        existingProduct.Stock = updatedProductDto.Stock;
-        // Agrega otras propiedades si es necesario
+        existingProduct.Status = updatedProductDto.Status;
+        existingProduct.Category = updatedProductDto.Category;
 
-        // Realizar la actualización en el repositorio
         return await _productRepository.UpdateProduct(existingProduct);
     }
 
-
-    public async Task<bool> DeleteProduct( int id)
+    public async Task<bool> Update(Product product)
     {
+        return await _productRepository.UpdateProduct(product);
+    }
 
-       
-        await _productRepository.DeleteProduct(id);
+    public async Task<bool> UpdateProductStatus(int id)
+    {
+        var product = await _productRepository.GetProductById(id);
+        if(product is null)
+        {
+            return false;
+        }
 
-        return true;
+        product.Status = false;
+        return await _productRepository.UpdateProduct(product);
     }
 
 }

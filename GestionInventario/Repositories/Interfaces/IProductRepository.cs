@@ -8,7 +8,7 @@ public interface IProductRepository
     Task<bool> Add(Product product);
     Task<bool> ExistsProductById(int id);
     Task<bool> ExistsProductByBarCodeAsync(string barCode);
-    Task<List<Product>> GetAllProducts();
+    Task<List<Product>> GetAllProducts(string? name, string? category);
 
     Task<bool> UpdateProduct(Product product);
 
