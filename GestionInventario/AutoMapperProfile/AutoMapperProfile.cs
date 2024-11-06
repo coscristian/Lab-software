@@ -11,5 +11,6 @@ public class AutoMapperProfile : Profile
         CreateMap<ProductDto, Product>();
         CreateMap<Product, ProductDto>();
         CreateMap<MovementDto, Movement>();
+        CreateMap<SupplierDto, Supplier>();
     }
 }

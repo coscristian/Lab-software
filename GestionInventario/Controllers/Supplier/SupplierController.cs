@@ -20,34 +20,34 @@ namespace GestionInventario.Controllers.Supplier
 
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> CreateSupplier()
+        public async Task<IActionResult> CreateSupplier(SupplierDto supplierDto)
         {
-           
-            return Ok("Proveedor creado");
+            var result = _supplierService.CreateSupplier(supplierDto);
+            return Ok(result);
         }
 
         [HttpGet]
         [Route("Read")]
         public async Task<IActionResult> ReadSupplier()
         {
-            
-            return Ok("Proveedores le�dos");
+            var result = await _supplierService.GetAllSuppliers();
+            return Ok(result);
         }
 
         [HttpPut]
         [Route("Updates")]
-        public async Task<IActionResult> UpdatesSupplier()
+        public async Task<IActionResult> UpdatesSupplier(string nit, SupplierUpdateDto supplierUpdateDto)
         {
-            
-            return Ok("Proveedor actualizado");
+            var result = await _supplierService.UpdateSupplier(nit, supplierUpdateDto);
+            return Ok(result);
         }
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult>  DeleteSupplier(int id)
+        public async Task<IActionResult> DeleteSupplier(string nit)
         {
-            
-            return Ok("Proveedor eliminado");
+            var result = await _supplierService.UpdateSupplierStatus(nit);
+            return Ok(result);
         }
     }
 }

@@ -12,12 +12,14 @@ public interface ISupplierRepository
     Task<bool> Add(Supplier supplier);
     Task<bool> ExistsSupplierById(int id);
    
-    Task<List<Supplier>> GetAllProducts();
+    Task<List<Supplier>> GetAllSuppliers();
 
     Task<bool> UpdateSupplier(Supplier supplier);
 
     Task<Supplier?> GetSuppliertById(int id);
 
     Task<bool> DeleteSupplier(int id);
+
+    Task<Supplier?> GetSuppliertByNit(string nit);
 
 }

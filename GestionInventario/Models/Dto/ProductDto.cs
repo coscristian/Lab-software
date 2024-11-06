@@ -9,6 +9,7 @@ public class ProductDto
     public decimal UnitPrice { get; set; }
     public string UnitMeasure { get; set; }
     public int Stock { get; set; }
+    public int SupplierId { get; set; }
 }
 
 public class ProductUpdateDto

@@ -10,5 +10,7 @@ public class Product : Entity
     public string UnitMeasure { get; set; }
     public int Stock { get; set; }
 
-   
+    //Relacion con proveedores
+    public int SupplierId { get; set; }
+    //public Supplier? Supplier { get; set; }
 }
