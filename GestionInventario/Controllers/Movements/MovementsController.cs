@@ -19,9 +19,12 @@ public class MovementsController : ControllerBase
 
     [HttpPut]
     [Route("UpdateInv")]
-    public async Task<IActionResult> Add([FromBody] MovementDto movementDto)
+    public async Task<IActionResult> UpdateInv([FromBody] MovementDto movementDto)
     {
         var result = await _movementService.Add(movementDto);
-        return Ok(result);
+        
+        return result ? 
+            CreatedAtAction(nameof(UpdateInv), result)
+            : BadRequest("No se pudo crear el movimiento");
     }
 }

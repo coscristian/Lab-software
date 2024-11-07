@@ -41,7 +41,9 @@ public class SupplierRepository : ISupplierRepository
 
     public async Task<List<Supplier>> GetAllSuppliers()
     {
-       return await _context.Suppliers.ToListAsync();
+       return await _context.Suppliers
+            .Where(s => s.Status)
+            .ToListAsync();
     }
 
     public async Task<Supplier?> GetSuppliertById(int id)

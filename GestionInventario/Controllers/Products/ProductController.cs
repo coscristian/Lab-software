@@ -24,7 +24,9 @@ public class ProductController : ControllerBase
     public async Task<IActionResult> CreateProduct([FromBody] ProductDto product)
     {
         var result = await _productService.CreateProduct(product);
-        return Ok(result);
+        return result ?
+            CreatedAtAction(nameof(CreateProduct), result)
+            : BadRequest("No se pudo crear el Producto");
     }
 
     [HttpGet]
@@ -41,26 +43,20 @@ public class ProductController : ControllerBase
     [Route("Updates")]
     public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductUpdateDto updatedProductDto)
     {
-        // Validar si el DTO es nulo
         if (updatedProductDto == null)
         {
             return BadRequest("El cuerpo de la solicitud no puede estar vacío.");
         }
 
-        // Intentar actualizar el producto
         bool isUpdated = await _productService.UpdateProduct(id, updatedProductDto);
 
-        // Si no se encontró el producto, devolver NotFound
         if (!isUpdated)
         {
             return NotFound($"No se encontró el producto con ID = {id}.");
         }
 
-        // Si la actualización fue exitosa, devolver NoContent
         return Ok(isUpdated);
     }
-
-
 
     [HttpPut]
     [Route("Delete")]
@@ -68,7 +64,7 @@ public class ProductController : ControllerBase
     public async Task<IActionResult> DeleteProduct(int id)
     {
         var result = await _productService.UpdateProductStatus(id);
-        return Ok(result);
+        return result ? NoContent() : NotFound("No se eliminó, al parecer el recurso no existe");
     }
 
 }

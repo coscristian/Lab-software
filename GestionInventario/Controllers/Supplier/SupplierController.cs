@@ -22,8 +22,10 @@ namespace GestionInventario.Controllers.Supplier
         [Route("Create")]
         public async Task<IActionResult> CreateSupplier(SupplierDto supplierDto)
         {
-            var result = _supplierService.CreateSupplier(supplierDto);
-            return Ok(result);
+            var result = await _supplierService.CreateSupplier(supplierDto);
+            return result ?
+                CreatedAtAction(nameof(CreateSupplier), result)
+                : BadRequest("No se pudo crear el Proveedor");
         }
 
         [HttpGet]
@@ -39,7 +41,7 @@ namespace GestionInventario.Controllers.Supplier
         public async Task<IActionResult> UpdatesSupplier(string nit, SupplierUpdateDto supplierUpdateDto)
         {
             var result = await _supplierService.UpdateSupplier(nit, supplierUpdateDto);
-            return Ok(result);
+            return result ? NoContent() : NotFound("No se actualizó, al parecer el recurso no existe");
         }
 
         [HttpDelete]
@@ -47,7 +49,7 @@ namespace GestionInventario.Controllers.Supplier
         public async Task<IActionResult> DeleteSupplier(string nit)
         {
             var result = await _supplierService.UpdateSupplierStatus(nit);
-            return Ok(result);
+            return result ? NoContent() : NotFound("No se eliminó, al parecer el recurso no existe");
         }
     }
 }
