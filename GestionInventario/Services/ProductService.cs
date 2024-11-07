@@ -73,7 +73,7 @@ public class ProductService : IProductService
         }
 
         existingProduct.Name = updatedProductDto.Name;
-        existingProduct.UnitPrice = updatedProductDto.UnitPrice;
+        //existingProduct.UnitPrice = updatedProductDto.UnitPrice;
         existingProduct.Status = updatedProductDto.Status;
         existingProduct.Category = updatedProductDto.Category;
 

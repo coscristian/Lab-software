@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionInventario.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20241105025404_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20241107192920_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,8 +40,14 @@ namespace GestionInventario.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
+                    b.Property<int>("TotalAmount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Type")
                         .HasColumnType("longtext");
+
+                    b.Property<decimal>("Value")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -55,6 +61,10 @@ namespace GestionInventario.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("BarCode")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Category")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -76,19 +86,59 @@ namespace GestionInventario.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Stock")
+                    b.Property<bool>("Status")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("SupplierId")
                         .HasColumnType("int");
 
                     b.Property<string>("UnitMeasure")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("GestionInventario.Models.Supplier", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("ModificationDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("MotivoEstado")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Nit")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Suppliers");
                 });
 
             modelBuilder.Entity("GestionInventario.Models.User", b =>

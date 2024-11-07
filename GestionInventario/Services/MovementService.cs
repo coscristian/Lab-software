@@ -24,30 +24,40 @@ namespace GestionInventario.Services
             var product = await _productService.GetProductById(movementDto.ProductId);
             if(product is null || movementDto.Amount < 0)
             {
+                // TODO: Retornar mensaje de respuesta que indique que el producto no existe o la cantidad es invalida
                 return false;
             }
 
-            if(movementDto.Type.Equals("Adicionar"))            
+            var mostRecentMovement = await _movementRepository.GetMostRecentMovementById(product.Id);
+            if (mostRecentMovement is null)
             {
-                product.Stock += movementDto.Amount;
-            }else if(movementDto.Type.Equals("Disminuir"))
-            {
-                product.Stock -= movementDto.Amount;
-                if(product.Stock < 0)
-                {
-                    product.Stock = 0;
-                }
+                if (movementDto.Type != "Adicionar")
+                    return false;
+
+                mostRecentMovement = new Movement { TotalAmount = 0 };
             }
 
-            var updateStockSuceed = await _productService.Update(product);
-            if(!updateStockSuceed)
+            var totalMovement = 0;
+            switch (movementDto.Type)
             {
-                return false;
+                case "Adicionar":
+                    totalMovement = movementDto.Amount + mostRecentMovement.TotalAmount;
+                    break;
+                case "Disminuir":
+                    // TODO: Retornar mensaje de respuesta: La cantidad a disminuir no debe ser mayor a la actual
+                    if (movementDto.Amount > mostRecentMovement!.TotalAmount)
+                        return false;
+
+                    totalMovement = mostRecentMovement.TotalAmount - movementDto.Amount;
+                    break;
+                default:
+                    // TODO: Retornar mensaje de respuesta que indique que debe indicar un movimiento correcto
+                    return false;
+                    break;
             }
-
-
             var mappedMovement = _mapper.Map<MovementDto, Movement>(movementDto);
             mappedMovement.Date = DateTime.Now;
+            mappedMovement.TotalAmount = totalMovement;
 
             var result = await _movementRepository.Add(mappedMovement);
             return result;

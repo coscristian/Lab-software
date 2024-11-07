@@ -37,8 +37,14 @@ namespace GestionInventario.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
+                    b.Property<int>("TotalAmount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Type")
                         .HasColumnType("longtext");
+
+                    b.Property<decimal>("Value")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -80,18 +86,12 @@ namespace GestionInventario.Migrations
                     b.Property<bool>("Status")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
                     b.Property<int>("SupplierId")
                         .HasColumnType("int");
 
                     b.Property<string>("UnitMeasure")
                         .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

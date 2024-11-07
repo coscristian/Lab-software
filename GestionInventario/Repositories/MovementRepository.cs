@@ -1,5 +1,6 @@
 ﻿using GestionInventario.Models;
 using GestionInventario.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestionInventario.Repositories
 {
@@ -18,6 +19,14 @@ namespace GestionInventario.Repositories
             var result = await _context.SaveChangesAsync();
 
             return result > 0;
+        }
+
+        public async Task<Movement?> GetMostRecentMovementById(int productId)
+        {
+            return await _context.Movements
+                .Where(m => m.ProductId == productId)
+                .OrderByDescending(m => m.Date)
+                .FirstOrDefaultAsync();
         }
     }
 }
