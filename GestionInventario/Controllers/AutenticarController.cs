@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GestionInventario.Controllers
 
 {
-    [ApiController]
+    [ApiController] // TODO: Eliminar este atributo
     [Route("api/[controller]")]
     public class AutenticarController : ControllerBase
     {
@@ -17,7 +17,7 @@ namespace GestionInventario.Controllers
             _userService = userServices;
         }
 
-        [HttpPost("ValidarUsuario")]
+        [HttpPost("ValidateUser")]
         public IActionResult ValidarUsuario(UserValidationRequest user)
         {
             bool esValido = _userService.ValidarUsuario(user.Email, user.Password);
@@ -42,8 +42,5 @@ namespace GestionInventario.Controllers
                 });
             }
         }
-
-
     }
-
 }

@@ -1,4 +1,8 @@
-﻿using GestionInventario.Models;
+﻿using AutoMapper;
+using ErrorOr;
+using GestionInventario.Common.Responses;
+using GestionInventario.Common.Responses.Dto;
+using GestionInventario.Models;
 using GestionInventario.Models.Dto;
 using GestionInventario.Repositories.Interfaces;
 using GestionInventario.Services.Interfaces;
@@ -8,21 +12,37 @@ namespace GestionInventario.Services
     public class UserService : IUserServices
     {
         private IUserRepository _userRepository;
+        private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
-        public bool CreateUser(User newUser)
+        public async Task<ErrorOr<Response<UserResponseDto>>> CreateUser(UserDto userDto)
         {
-            var users = _userRepository.GetAllUsers();
-            var existingUser = users.Find(u => u.IdNumber == newUser.IdNumber);
-            
-            if (existingUser != null)
+            try
+            {
+                var existingUser = await _userRepository.GetUserByIdNumberAsync(userDto.IdNumber);
+                /*if (existingUser is not null)
+                {
+                    return Error(); // TODO: This User Already Exists.
+                }*/
+                
+                // TODO: Validate fields (Name, IdNumber, Address...)
+                var mappedUser = _mapper.Map<UserDto, User>(userDto);
+                
+                
+                
+                //var existingUser = users.Find(u => u.IdNumber == newUser.IdNumber);
+                return _userRepository.Add(newUser);
+            }
+            catch(Exception ex)
+            {
+                // TODO: Implement Exception
                 return false;
-
-            return _userRepository.Add(newUser);
+            }
         }
 
         public List<UserDto> GeAlltUsers()

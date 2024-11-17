@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GestionInventario.Controllers
 {
-    [ApiController]
+    [ApiController] // TODO: Eliminar este atributo
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
@@ -47,14 +47,14 @@ namespace GestionInventario.Controllers
             List<UserDto> usersDto = _userService.GeAlltUsers();
             return Ok(usersDto);
         }
-
+/*
         [HttpPost]
         [Route("CreateUser")]
-        public ActionResult<List<UserDto>> CreateUser(User user)
+        public ActionResult<UserDto> CreateUser(UserDto userDto)
         {
             try
             {
-                if(user == null){
+                if(userDto == null){
                     return  BadRequest("El cliente no puede ser nulo");
                 }
                 _userService.CreateUser(user);
@@ -73,7 +73,9 @@ namespace GestionInventario.Controllers
                     }
                 );
             }
-        }
+            var result = _userService.CreateUser(userDto);
+
+        }*/
 
         [HttpPut]
         [Route("UpdateUser")]

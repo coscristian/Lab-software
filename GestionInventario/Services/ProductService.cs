@@ -1,11 +1,13 @@
+using System.Net;
 using AutoMapper;
-using GestionInventario.Controllers.Products;
-using GestionInventario.Models;
 using GestionInventario.Models.Dto;
-using GestionInventario.Models.Enums;
 using GestionInventario.Repositories.Interfaces;
 using GestionInventario.Services.Interfaces;
-using System.Runtime.CompilerServices;
+using ErrorOr;
+using GestionInventario.Common.Responses;
+using GestionInventario.Common.Responses.Dto;
+using GestionInventario.Errors.Products;
+using Product = GestionInventario.Common.Validations.Products.Product;
 
 namespace GestionInventario.Services;
 
@@ -13,37 +15,89 @@ public class ProductService : IProductService
 {
     private readonly IProductRepository _productRepository;
     private readonly IMapper _mapper;
-
     public ProductService(IProductRepository productRepository, IMapper mapper)
     {
         _productRepository = productRepository;
         _mapper = mapper;
     }
 
-    public async Task<bool> CreateProduct(ProductDto product)
+    public async Task<ErrorOr<Response<ProductResponseDto>>> CreateProduct(ProductDto productDto)
     {
         try
         {
-            var existsProduct = await _productRepository.ExistsProductByBarCodeAsync(product.BarCode);
-            if (existsProduct)
-                return false;
+            var errors = ValidateProductCreation(productDto); // TODO: Change productDtoName to productRequestDto
+            if (errors.Count > 0)
+            {
+                return errors;
+            }
 
-            var mappedProduct = _mapper.Map<ProductDto, Product>(product);
-            mappedProduct.Status = true;
-            mappedProduct.CreationDate = DateTime.Now;
-            mappedProduct.ModificationDate = DateTime.Now;
-            mappedProduct.MotivoEstado = string.Empty;
+            var productResponse = new ProductResponseDto() { };
+            return Response<ProductResponseDto>.SuccessCreation(
+                "Creación de Producto existosa",
+                productResponse,
+                HttpStatusCode.OK
+            );
 
-            var result = await _productRepository.Add(mappedProduct);
-            return result;
+            // var existsProduct = await _productRepository.ExistsProductByBarCodeAsync(productDto.BarCode);
+            // if (existsProduct)
+            //     return false;
+            //
+            // var mappedProduct = _mapper.Map<ProductDto, Models.Product>(productDto);
+            // var result = await _productRepository.Add(mappedProduct);
+            // return result;
         }
         catch (Exception e)
         {
-            return false;
+            var productResponse = new ProductResponseDto() { };
+            return Response<ProductResponseDto>.SuccessCreation(
+                "Creación de Producto existosa",
+                productResponse,
+                HttpStatusCode.OK
+            );
         }
     }
 
-    public async Task<List<Product>> GetAllProducts(string? name, string? category)
+    private static List<Error> ValidateProductCreation(ProductDto productDto)
+    {
+        // ProblemDetails problemDetails = new ProblemDetails()
+        // {
+        //     Title = "Error en la validación de los datos",
+        //     Detail = "Los parametros no son correctos",
+        //     Status = 400,
+        //     Type = "https://example.com/code-error-1"
+        // };
+        var errors = new List<Error>();
+        ValidateProductName(productDto.Name, errors);
+
+        return errors;
+        
+        
+        
+        //if (string.IsNullOrEmpty(productDto.Name)) Errors.Add(ProductNameErrors.Empty);
+        //if (string.IsNullOrEmpty(productDto.BarCode)) Errors.Add(ProductBarCodeErrors.Empty);
+        
+
+    }
+
+    private static void ValidateProductName(string name, List<Error> errors)
+    {
+        if (string.IsNullOrEmpty(name))
+            errors.Add(ProductNameErrors.Empty);
+        
+        if (!Product.Name.AreValidCharacters(name))
+            errors.Add(ProductNameErrors.InvalidCharacters);
+
+        if (!Product.Name.IsValidMinimumLength(name))
+            errors.Add(ProductNameErrors.InvalidMinimumLength);
+        
+        if (!Product.Name.IsValidMaximumLength(name))
+            errors.Add(ProductNameErrors.InvalidMaximumLength);
+        
+        if(Product.Name.ContainsMultipleSpaces(name))
+            errors.Add(ProductNameErrors.MultipleConsecutiveSpaces);
+    }
+
+    public async Task<List<Models.Product>> GetAllProducts(string? name, string? category)
     {
         return await _productRepository.GetAllProducts(name, category);
     }
@@ -56,7 +110,7 @@ public class ProductService : IProductService
 
     }
 
-    public async Task<Product?> GetProductById(int id)
+    public async Task<Models.Product?> GetProductById(int id)
     {
         return await _productRepository.GetProductById(id);
     }
@@ -64,7 +118,7 @@ public class ProductService : IProductService
     public async Task<bool> UpdateProduct(int id, ProductUpdateDto updatedProductDto)
     {
         // Obtener el producto existente del repositorio
-        Product? existingProduct = await _productRepository.GetProductById(id);
+        Models.Product? existingProduct = await _productRepository.GetProductById(id);
 
         // Si el producto no existe, retorna false
         if (existingProduct == null)
@@ -80,7 +134,7 @@ public class ProductService : IProductService
         return await _productRepository.UpdateProduct(existingProduct);
     }
 
-    public async Task<bool> Update(Product product)
+    public async Task<bool> Update(Models.Product product)
     {
         return await _productRepository.UpdateProduct(product);
     }

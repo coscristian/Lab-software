@@ -1,12 +1,15 @@
 using GestionInventario.Models;
 using GestionInventario.Models.Dto;
 using System.Runtime.CompilerServices;
+using ErrorOr;
+using GestionInventario.Common.Responses;
+using GestionInventario.Common.Responses.Dto;
 
 namespace GestionInventario.Services.Interfaces;
 
 public interface IProductService
 {
-    Task<bool> CreateProduct(ProductDto product);
+    Task<ErrorOr<Response<ProductResponseDto>>> CreateProduct(ProductDto product);
     Task<List<Product>> GetAllProducts(string? name, string? category);
     
     Task<bool> ExistsProductById(int id);

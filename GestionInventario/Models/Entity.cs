@@ -2,7 +2,7 @@ using GestionInventario.Models.Enums;
 
 namespace GestionInventario.Models;
 
-public class Entity
+public abstract class Entity
 {
     public int Id { get; set; }
     public bool Status { get; set; }

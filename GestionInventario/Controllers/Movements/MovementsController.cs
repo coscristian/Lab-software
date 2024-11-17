@@ -6,7 +6,7 @@ using MySqlX.XDevAPI;
 
 namespace GestionInventario.Controllers.Movements;
 
-[ApiController]
+[ApiController] // TODO: Eliminar este atributo
 [Route("api/[controller]")]
 public class MovementsController : ControllerBase
 {

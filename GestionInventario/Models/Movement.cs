@@ -1,6 +1,6 @@
 ﻿namespace GestionInventario.Models
 {
-    public class Movement
+    public class Movement : Entity
     {
         public int Id { get; set; }
         public string? Description { get; set; }

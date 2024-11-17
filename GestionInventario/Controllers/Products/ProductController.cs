@@ -1,4 +1,5 @@
 using AutoMapper;
+using ErrorOr;
 using GestionInventario.Models.Dto;
 using GestionInventario.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -6,9 +7,8 @@ using MySqlX.XDevAPI;
 
 namespace GestionInventario.Controllers.Products;
 
-[ApiController]
-[Route("api/[controller]")]
-public class ProductController : ControllerBase
+[Route("api/[controller]")] 
+public class ProductController : ApiController
 {
     private readonly IProductService _productService;
     private readonly IMapper _mapper;
@@ -23,10 +23,16 @@ public class ProductController : ControllerBase
     [Route("Create")]
     public async Task<IActionResult> CreateProduct([FromBody] ProductDto product)
     {
-        var result = await _productService.CreateProduct(product);
-        return result ?
+        var productResult = await _productService.CreateProduct(product);
+        return productResult.Match(
+            result => Created(Url.Action("Get"), result), // TODO: Crear endpoint para obtener con el id creado
+            errors => Problem(errors)
+        );
+        
+        
+        /*return result ?
             CreatedAtAction(nameof(CreateProduct), result)
-            : BadRequest("No se pudo crear el Producto");
+            : BadRequest("No se pudo crear el Producto");*/
     }
 
     [HttpGet]
